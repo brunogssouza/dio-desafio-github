@@ -1,0 +1,336 @@
+/* Formattig the general layout of the webpage */
+/*Yes, its me Bruno Writing this in english */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+
+/*Nav bar design Firstly removing the styles of the list , Altering the decoration of the link items and after creating a flexbox for the
+complete navbar , setting its background color and implementing the space between to make both logo and navbar flexboxes in the start and
+end of the container. Setting min height for design */
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: midnightblue;
+    min-height: 100px;
+}
+
+.list-items {
+    display: flex;
+    list-style: none;
+
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 50%;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.itemNavbar {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 25px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    min-width: 50%;
+    justify-content: flex-start;
+    margin-left: 100px;
+}
+
+
+/* Creation of a coitainer that envelops all the content in the page between the navbar (header) and the footer */
+
+.container-info {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-content: center;
+}
+
+/*Creation of the middle page design and flexbox alterations - "SAIBA MAIS" SECTION */
+
+
+
+
+.container-saibaMais {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.saibaMais {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.tituloSaibaMais {
+
+    font-size: 50px;
+    font-weight: bold;
+    color: midnightblue;
+}
+
+.subtextoSaibaMais {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.botaoSaibaMais {
+
+    max-width: 200px;
+    border-radius: 48%;
+    border: 10px solid midnightblue;
+    background-color: midnightblue;
+
+    margin-top: 30px;
+
+
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.imagem-saibaMais {
+    border: 5px solid lightseagreen;
+}
+
+
+/* Creation of the "Quem somos" section. Image first, afterwards title and subtext with lorem ipslum */
+
+.container-quemSomos {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagem-quemSomos {
+    max-width: 50%;
+}
+
+.quemSomos {
+    max-width: 50%;
+}
+
+.tituloQuemSomos {
+    font-size: 50px;
+    font-weight: bold;
+    color: midnightblue;
+    margin-bottom: 50px;
+}
+
+.textoQuemSomos {
+
+    font-size: 25px
+}
+
+
+/*Creation of the "Serviços" section. We need a flex box containing 3 elements and considering the spacement between the elements in the image,. maybe its viable 
+using a space-around tag in the justify content section. */
+
+.container-serviços {
+
+    background-color: midnightblue;
+    min-height: 500px;
+
+}
+
+
+.serviços-titulo {
+    font-size: 25px;
+    color: white;
+    margin-left: 100px;
+    min-height: 50px;
+    align-items: center;
+}
+
+.serviços {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    min-height: 300px;
+}
+
+.pacotes-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.hospedagens-box {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: center;
+}
+
+.roteiros-box {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: center;
+}
+
+.texto-serviços {
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.botao-serviços {
+    padding-top: 15px;
+    min-height: 50px;
+    min-width: 150px;
+
+
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+
+    color: midnightblue;
+    border: 1px solid white;
+    border-radius: 55%;
+    background-color: white;
+
+}
+
+/* Creating the "Planos" Section. We need 3 elements with border , with the biggest element on the end of the container. I dont know if the usage of row reverse applies here
+or i just need to create the last container with a bigger min height than the other ones */
+
+
+.planos-container {
+
+    margin: 100px;
+    min-height: 500px;
+
+}
+
+.planos-titulo {
+    font-size: 25px;
+    color: black;
+    margin-left: 100px;
+    min-height: 50px;
+    align-items: center;
+
+}
+
+.planos-items {
+
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    align-items: flex-end;
+    min-height: 400px;
+
+}
+
+.plano1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    border: 5px solid midnightblue;
+    min-height: 250px;
+}
+
+.plano2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    border: 5px solid midnightblue;
+    min-height: 350px;
+
+}
+
+.plano3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    border: 5px solid midnightblue;
+    min-height: 450px;
+}
+
+.titulos-items {
+    font-size: 30px;
+    text-decoration: underline;
+    color: black;
+}
+
+.lista-planos {
+    font-size: 20px;
+    color: black;
+
+}
+
+.botao-planos {
+
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+
+    background-color: midnightblue;
+    text-decoration: none;
+    text-align: center;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+
+/*footer section just in need of a background color, color white for text and justify content space-between between the 2 containers. little bit of min height and some font ajusting */
+
+
+.footer-cotainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: midnightblue;
+    min-height: 50px;
+    align-items: flex-end;
+}
+
+.footer-items {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+
+}
