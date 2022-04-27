@@ -1,0 +1,28 @@
+.contador-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 200px;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: aquamarine;
+}
+
+.subtrair {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+}
+
+.adicionar {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+}
